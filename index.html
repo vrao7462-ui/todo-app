@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Header Section -->
+        <header class="header">
+
+            <h1>📝 Smart To-Do App</h1>
+
+            <p class="tagline">
+                Stay Organized • Stay Productive
+            </p>
+
+            <div class="date-section">
+                <span id="currentDate">
+                    Tuesday, June 16, 2026
+                </span>
+            </div>
+
+        </header>
+
+        <!-- Input Section -->
+        <section class="input-section">
+
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter your task...">
+
+            <select id="priority">
+
+                <option value="High">
+                    🔴 High Priority
+                </option>
+
+                <option value="Medium">
+                    🟡 Medium Priority
+                </option>
+
+                <option value="Low">
+                    🟢 Low Priority
+                </option>
+
+            </select>
+
+            <button id="addBtn">
+                ➕ Add Task
+            </button>
+
+        </section>
+
+        <!-- Search Section -->
+        <section class="search-section">
+
+            <input
+                type="text"
+                id="searchTask"
+                placeholder="🔍 Search tasks...">
+
+        </section>
+
+        <!-- Statistics Section -->
+        <section class="stats-section">
+
+            <div class="stat-card">
+                <h3>Total Tasks</h3>
+                <p id="totalTasks">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Active Tasks</h3>
+                <p id="activeTasks">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Completed</h3>
+                <p id="completedTasks">0</p>
+            </div>
+
+        </section>
+
+        <!-- Progress Section -->
+        <section class="progress-section">
+
+            <h2>📊 Progress Tracker</h2>
+
+            <div class="progress-bar">
+
+                <div
+                    id="progressFill"
+                    class="progress-fill">
+                </div>
+
+            </div>
+
+            <p id="progressText">
+                0% Completed
+            </p>
+
+        </section>
+
+        <!-- Filter Buttons -->
+        <section class="filters">
+
+            <button id="allBtn">
+                📋 All
+            </button>
+
+            <button id="activeBtn">
+                ⏳ Active
+            </button>
+
+            <button id="completedBtn">
+                ✅ Completed
+            </button>
+
+        </section>
+
+        <!-- Task List -->
+        <section class="task-section">
+
+            <ul id="taskList"></ul>
+
+            <div id="emptyMessage">
+
+                <img
+                    src="images/empty-task.png"
+                    alt="No Tasks">
+
+                <p>
+                    No tasks available.
+                    Add your first task!
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- Action Buttons -->
+        <section class="action-buttons">
+
+            <button id="clearCompleted">
+                🗑 Clear Completed
+            </button>
+
+            <button id="themeBtn">
+                🌙 Dark Mode
+            </button>
+
+        </section>
+
+        <!-- Footer -->
+        <footer>
+
+            <p>
+                Made with ❤️ using HTML, CSS & JavaScript
+            </p>
+
+            <p>
+                 Vinay Yadav To-Do App © 2026
+            </p>
+
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
